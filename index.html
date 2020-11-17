@@ -55,15 +55,38 @@
             </div>
 
         </section>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal ">
-                <button class="close-modal" data-close-modal>
-                    <svg class="client-icons-svg modal-icons-close">
-                        <use href="./img/sprite.svg#icon-Vector11">
-                        </use>
-                    </svg></button>
+        <form action="">
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-modal" data-close-modal>
+                        <svg class="client-icons-svg modal-icons-close">
+                            <use href="./img/sprite.svg#icon-Vector11">
+                            </use>
+                        </svg>
+                    </button>
+                    <!-- <div class="form-modal"> -->
+                    <p>Оставьте свои данные, мы вам перезвоним</p>
+                    <ul>
+                        <li class="form-fild"> <label for="name">Имя</label>
+                            <input type="text" name="name" id="name"></li>
+                        <li class="form-fild"><label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel"></li>
+                        <li class="form-fild"> <label for="mail">Почта</label>
+                            <input type="email" name="email" id="email"></li>
+                        <li class="form-fild"><label for="comment">Комментарий</label>
+                            <textarea name="comment" id="comment" cols="50%" rows="5"
+                                placeholder="Введите текст"></textarea></li>
+                    </ul>
+
+                    <input type="checkbox" name="" value="" id="checkbox">
+                    <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
+
+                    <button type="submit">Отправить</button>
+                    <!-- </div> -->
+                </div>
+
             </div>
-        </div>
+        </form>
         <!-- features -->
         <section class="cont-features">
             <div class="container">
@@ -334,6 +357,13 @@
                     <li class="join-link icon-facebook"><a href=""></a></li>
                     <li class="join-link icon-linkedin"><a href=""></a></li>
                 </ul>
+            </section>
+            <section class="form-footer">
+                <h2 class="join-title">Подпишитесь на рассылку</h2>
+                <label for="mail"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <button>Подписаться</button>
+
             </section>
         </div>
     </footer>
