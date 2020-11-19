@@ -64,25 +64,44 @@
                             </use>
                         </svg>
                     </button>
-                    <!-- <div class="form-modal"> -->
-                    <p>Оставьте свои данные, мы вам перезвоним</p>
-                    <ul>
-                        <li class="form-fild"> <label for="name">Имя</label>
-                            <input type="text" name="name" id="name"></li>
-                        <li class="form-fild"><label for="tel">Телефон</label>
-                            <input type="tel" name="tel" id="tel"></li>
-                        <li class="form-fild"> <label for="mail">Почта</label>
-                            <input type="email" name="email" id="email"></li>
-                        <li class="form-fild"><label for="comment">Комментарий</label>
-                            <textarea name="comment" id="comment" cols="50%" rows="5"
-                                placeholder="Введите текст"></textarea></li>
-                    </ul>
+                    <div role="group">
+                        <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
+                        <ul>
+                            <li class="form-fild">
+                                <label for="name">Имя</label>
+                                <input type="text" name="name" id="name" class="size-modal form-input">
+                                <svg class="modal-icon modal-icon-svg" width="12" heigh="12">
+                                    <use href="./img/sprite.svg#icon-Vector21"></use>
+                                </svg>
+                            </li>
+                            <li class="form-fild">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel" class="size-modal form-input">
+                                <svg class="modal-icon modal-icon-svg" width="12" heigh="12">
+                                    <use href="./img/sprite.svg#icon-Vector31"></use>
+                                </svg>
+                            </li>
+                            <li class="form-fild">
+                                <label for="mail">Почта</label>
+                                <input type="email" name="email" id="email" class="size-modal form-input">
+                                <svg class="modal-icon modal-icon-svg" width="12" heigh="12">
+                                    <use href="./img/sprite.svg#icon-Vector41"></use>
+                                </svg>
+                            </li>
+                            <li class="form-fild">
+                                <label for="comment">Комментарий</label>
+                                <textarea name="comment" id="comment" cols="50%" rows="5" placeholder="Введите текст"
+                                    class="form-input"></textarea></li>
+                        </ul>
+                    </div>
+                    <div class="contract">
+                        <input type="checkbox" name="checkbox" value="checkbox" id="checkbox" class="checkbox">
+                        <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#"
+                                class="title-contract">Условия
+                                договора</a> </label>
+                    </div>
+                    <button class="btn-modal" type="submit">Отправить</button>
 
-                    <input type="checkbox" name="" value="" id="checkbox">
-                    <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
-
-                    <button type="submit">Отправить</button>
-                    <!-- </div> -->
                 </div>
 
             </div>
@@ -287,41 +306,41 @@
                 <ul class="client-icons">
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg1">
+                            <svg class="client-icons-svg client-icons-svg1" width="44" heigh="49">
                                 <use href="./img/sprite.svg#icon-logo-1"></use>
                             </svg>
                         </a></li>
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg2">
+                            <svg class="client-icons-svg" width="40" heigh="52">
                                 <use href="./img/sprite.svg#icon-logo-2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg3">
+                            <svg class="client-icons-svg" width="41" heigh="43">
                                 <use href="./img/sprite.svg#icon-logo-3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg4">
+                            <svg class="client-icons-svg" width="80" heigh="42">
                                 <use href="./img/sprite.svg#icon-logo-4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg5">
+                            <svg class="client-icons-svg" width="59" heigh="47">
                                 <use href="./img/sprite.svg#icon-logo-5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="icons-item-client"><a class="icons-link-clients" href="" target="_blank"
                             rel="noopener noreferer">
-                            <svg class="client-icons-svg client-icons-svg6">
+                            <svg class="client-icons-svg" width="88" heigh="45">
                                 <use href="./img/sprite.svg#icon-logo-6"></use>
                             </svg>
                         </a>
@@ -360,10 +379,16 @@
             </section>
             <section class="form-footer">
                 <h2 class="join-title">Подпишитесь на рассылку</h2>
-                <label for="mail"></label>
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <button>Подписаться</button>
 
+
+                <div class="form-fild-footer"><label for="mail"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="modal-form-footer">
+                    <button class="btn-footer" type="submit">Подписаться</button>
+
+                    <svg class="footer-modal-icon footer-icon-svg" width="12" heigh="12">
+                        <use href="./img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                </div>
             </section>
         </div>
     </footer>
