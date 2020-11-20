@@ -88,22 +88,25 @@
                                     <use href="./img/sprite.svg#icon-Vector41"></use>
                                 </svg>
                             </li>
-                            <li class="form-fild">
-                                <label for="comment">Комментарий</label>
+                            <li class="form-fild-textarea">
+                                <label for="comment" class="title-textarea">Комментарий</label>
                                 <textarea name="comment" id="comment" cols="50%" rows="5" placeholder="Введите текст"
                                     class="form-input"></textarea></li>
                         </ul>
                     </div>
                     <div class="contract">
-                        <input type="checkbox" name="checkbox" value="checkbox" id="checkbox" class="checkbox">
-                        <span>
+                        
+
+                        <label for="checkbox">
+                            <input type="checkbox" name="checkbox" value="checkbox" id="checkbox" class="checkbox"> 
+                         <!-- <span> -->
                             <svg class="modal-icon-checbox" width="16" heigh="16">
                                 <use href="./img/sprite.svg#icon-check"></use>
-                            </svg>
-                        </span>
-                        <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#"
-                                class="title-contract">Условия
-                                договора</a> </label>
+                            </svg>    
+                            <!-- </span>   -->
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="title-contract">Условия
+                                договора</a> 
+                            </label>
                     </div>
                     <button class="btn-modal" type="submit">Отправить</button>
 
@@ -386,7 +389,8 @@
                 <h2 class="join-title">Подпишитесь на рассылку</h2>
 
 
-                <div class="form-fild-footer"><label for="mail"></label>
+                <div class="form-fild-footer">
+                    <label for="mail"></label>
                     <input type="email" name="email" id="email" placeholder="E-mail" class="modal-form-footer">
                     <button class="btn-footer" type="submit">Подписаться</button>
 

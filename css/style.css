@@ -105,7 +105,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     
-    fill: #757575;
+    fill: var(--primery-text-color);
 }
 /* .smartphone, */
 .envelope {
@@ -349,7 +349,18 @@ align-items: center;
     margin: 0 40px 10px 40px;
     position: relative;
 }
-
+.form-fild-textarea{
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 40px;
+    position: relative;
+}
+.title-textarea{
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: var(--primery-text-color);
+}
 .title-modal{
     padding-bottom: 12px;
 
@@ -370,7 +381,7 @@ align-items: center;
     font-size: 12px;
     color: var(--primery-text-color);
 }
-.form-fild textarea{
+.form-fild-textarea textarea{
     color: var(--primery-text-color);
     font-size: 12px;    
     margin: 0;
@@ -392,42 +403,49 @@ align-items: center;
     transition: 250ms;
   } 
 .contract{
-    /* text-align: center; */
-    /* padding-left: 77px; */
+    
+    padding-left: 77px;
     padding-top: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 1,71;
-    color: #757575;
+    color: var(--primery-text-color);
+    
     
 }
-.checkbox {
+ .checkbox {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
-    overflow: hidden;
+   overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-  }
+  }  
 
-  /* .modal-icon-checbox{
-    /* position: absolute; */
-    /* display: inline-block;  
+  .modal-icon-checbox{
+    position: absolute;
+    display: inline-block;  
     width: 16px;
-    height: 16px; */
-    /* background-color: red; */
-    /* border: 2px solid #212121;  
+    height: 16px;
+    margin-left: -25px;
+    
+    border: 2px solid #212121;  
     border-radius: 2px;
-   } */
-  /*.checkbox:checked + .modal-icon-checbox{
-      background-color: red;
-  } */
+    
+   }
+  .checkbox:checked + .modal-icon-checbox{
+   background-color: var(--accent-color);
+   border: 1px solid var(--accent-color);
+ 
+   transition: 250ms;
+  } 
 
 .title-contract{
     text-decoration: underline;
     color: var(--accent-color);
+    
 }
 .btn-modal{
     display: flex;
