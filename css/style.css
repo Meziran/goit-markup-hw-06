@@ -393,7 +393,7 @@ align-items: center;
   } 
 .contract{
     /* text-align: center; */
-    padding-left: 77px;
+    /* padding-left: 77px; */
     padding-top: 20px;
     font-weight: normal;
     font-size: 14px;
@@ -411,6 +411,20 @@ align-items: center;
     border: 0;
     clip: rect(0 0 0 0);
   }
+
+  /* .modal-icon-checbox{
+    /* position: absolute; */
+    /* display: inline-block;  
+    width: 16px;
+    height: 16px; */
+    /* background-color: red; */
+    /* border: 2px solid #212121;  
+    border-radius: 2px;
+   } */
+  /*.checkbox:checked + .modal-icon-checbox{
+      background-color: red;
+  } */
+
 .title-contract{
     text-decoration: underline;
     color: var(--accent-color);
