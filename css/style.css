@@ -91,7 +91,7 @@ align-items: center;
 
 .nav-list .link-header{
     display: block;
-    padding-top: 32px 0;
+    padding-top: 32px;
 }
 .info-list{
     display: flex;
@@ -406,12 +406,11 @@ align-items: center;
     
     padding-left: 77px;
     padding-top: 20px;
+    
     font-weight: normal;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1,7;
     color: var(--primery-text-color);
-    
-    
 }
  .checkbox {
     position: absolute;
