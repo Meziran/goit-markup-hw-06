@@ -64,8 +64,6 @@ textarea{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    
-    /* border: 1px solid transparent; */
 }
 .visually-hidden {
     position: absolute !important;
@@ -308,9 +306,6 @@ align-items: center;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    
-
-
     width: 528px;
     height: 581px;
 
@@ -343,14 +338,12 @@ align-items: center;
     transition: 250ms;
 }
 .form-fild{
-    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin: 0 40px 10px 40px;
     position: relative;
 }
 .form-fild-textarea{
-    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin: 0 40px 0 40px;
@@ -403,7 +396,6 @@ align-items: center;
     transition: 250ms;
   } 
 .contract{
-    
     padding-left: 77px;
     padding-top: 20px;
     
@@ -418,7 +410,7 @@ align-items: center;
     height: 1px;
     margin: -1px;
     padding: 0;
-   overflow: hidden;
+    overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
   }  
@@ -432,8 +424,7 @@ align-items: center;
     
     border: 2px solid #212121;  
     border-radius: 2px;
-    
-   }
+  }
   .checkbox:checked + .modal-icon-checbox{
    background-color: var(--accent-color);
    border: 1px solid var(--accent-color);
@@ -483,6 +474,7 @@ align-items: center;
 }
 .modal-icon-svg{    width: 18px;
     height: 18px;}
+
 /*  features  */
 
 .ul-features,
@@ -497,7 +489,6 @@ align-items: center;
 .cont-features{
 margin-top: 94px;    
 }
-
 
 .features{
     display: inline-block;
@@ -563,7 +554,6 @@ margin-top: 94px;
 .title-client
 {
     padding: 94px 0;
-    
 }
 .position-doing{
     position: relative;
@@ -591,10 +581,10 @@ margin-top: 94px;
 
     opacity: 0;
 }
-.doing-img:hover .title-doing{
+.doing-img .title-doing{
     opacity: 1;
 
-    transition: 250ms;
+    /* transition: 250ms; */
 }
 
 /* TEAM */
@@ -610,7 +600,6 @@ margin-top: 94px;
 .team{
     padding: 94px 0;
     background-color: var(--not-white);
-
 }
 
 .title-team{
@@ -812,7 +801,6 @@ address ul{
         padding-top: 72px;
         /* padding-bottom: 100px; */
         margin-left: 93px;
-        
     }
 
     .btn-footer{
@@ -1009,16 +997,17 @@ address ul{
 
     color:var(--white);
     background-color: rgba(33, 150, 243, 0.9);
-    
+    transition: transform 4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 .position-work-kard:hover .title-work-kard {
     opacity: 1;
 
-    animation-name: pullUp;
+    animation-name: pullUp; 
+    
     animation-duration: 500ms; 
     animation-timing-function: ease-out;    
-     transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
  
 @keyframes pullUp {
